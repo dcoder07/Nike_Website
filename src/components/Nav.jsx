@@ -1,19 +1,20 @@
 import React from "react";
 import headerLogo from "../assets/images/header-logo.svg";
+import hamburger from "../assets/icons/hamburger.svg";
 import "../fonts/Montserrat-Black.ttf";
 import { navLinks } from "../constants/index";
 
 const Nav = () => {
   return (
     <header
-      className='padding-x py-2 my-7 z-10 absolute w-full text-xl '
-      style={{ fontFamily: "Montserrat" }}
+      className='padding-x py-8 z-10 absolute w-full text-xl'
+      
     >
       <div className='flex justify-between items-center max-container gap-16 '>
         <a href='#link'>
-          <img src={headerLogo} height={200} width={120} />
+          <img src={headerLogo} height={250} width={150} />
         </a>
-        <ul className='flex flex-1 justify-center align-items gap-16 font-medium max-lg:hidden montserrat leading-normal text-gray-400 '>
+        <ul className='flex flex-1 justify-center align-items gap-16 font-light max-lg:hidden montserrat leading-normal text-gray-600 '>
           {navLinks.map((item, index) => (
             <li key={index}>
               <a href={item.href}>{item.label}</a>
@@ -24,6 +25,9 @@ const Nav = () => {
           <span className='font-medium max-lg:hidden leading-normal'>
             Sign in / Explore now
           </span>
+        </div>
+        <div className='mr-12 cursor-pointer lg:hidden'>
+          <img src={hamburger} alt="hamburger" height='25' width='25' />
         </div>
       </div>
     </header>
