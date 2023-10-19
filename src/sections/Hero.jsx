@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "../components/Button.jsx";
 import { arrowRight } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3} from "../assets/images";
+import { bigShoe1 } from "../assets/images";
 import { statistics, shoes } from "../constants/index.js";
-import ShoeCard from '../components/ShoeCard'
+import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
+  const [img, setImg] = React.useState(bigShoe1);
   return (
     <section
       id='home'
@@ -34,13 +35,20 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className='relative flex flex-1 justify-center items-center ml-16 max-xl:rounded-2xl z-0  py-10 bg-shoe max-h-screen '>
-      <img className='object-cover' src={bigShoe1} alt='bigShoe1' />
-        <div className="absolute bottom-[-60px] md:bottom-[-120px] xl:bottom-[-40px] flex flex-1 gap-4 m-1 ">
-        {shoes.map((shoe)=><ShoeCard 
-          bigShoe={shoe.bigShoe}
-          URL={shoe.thumbnail}
-        />)}
+      <div className='relative flex flex-1 py-16 sm:pb-32 md:py-10 justify-center items-center ml-16 max-xl:rounded-2xl z-0 bg-shoe max-h-screen '>
+        <img className='object-cover' src={img} alt='bigShoe1' />
+        <div className='absolute bottom-[-60px] md:bottom-[-120px] xl:bottom-[-40px] flex flex-1 gap-4 m-1 '>
+          {shoes.map((shoe, index) => (
+            <ShoeCard
+              key={index}
+              imageURL={shoe}
+              bigShoe={shoe.bigShoe}
+              image={shoe.thumbnail}
+              handleChange={(event) => {
+                setImg(event);
+              }}
+            />
+          ))}
         </div>
       </div>
     </section>
