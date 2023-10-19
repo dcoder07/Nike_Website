@@ -1,7 +1,6 @@
 import React from "react";
 import headerLogo from "../assets/images/header-logo.svg";
 import hamburger from "../assets/icons/hamburger.svg";
-import "../fonts/Montserrat-Black.ttf";
 import { navLinks } from "../constants/index";
 
 const Nav = () => {
