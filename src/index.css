@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.bg-shoe{
+  background: url('./assets/images/collection-background.svg');
+  object-fit: cover;
+}
 * {
   margin: 0;
   padding: 0;

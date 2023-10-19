@@ -10,7 +10,7 @@ const Nav = () => {
         <a href='#link'>
           <img src={headerLogo} height={250} width={150} />
         </a>
-        <ul className='flex flex-1 justify-center align-items gap-8 xl:gap-16 font-light max-lg:hidden montserrat leading-normal text-gray-600 '>
+        <ul className='flex flex-1 justify-center align-items gap-8 xl:gap-16 font-bold max-lg:hidden montserrat leading-normal text-gray-600 '>
           {navLinks.map((item, index) => (
             <li key={index}>
               <a href={item.href}>{item.label}</a>
