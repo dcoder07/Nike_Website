@@ -6,7 +6,7 @@ import { statistics, shoes } from "../constants/index.js";
 import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
-  const [img, setImg] = React.useState(bigShoe1);
+  const [currentImg, setCurrentImg] = React.useState(bigShoe1);
   return (
     <section
       id='home'
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='relative flex flex-1 py-16 sm:pb-32 md:py-10 justify-center items-center ml-16 max-xl:rounded-2xl z-0 bg-shoe max-h-screen '>
-        <img className='object-cover' src={img} alt='bigShoe1' />
+        <img className='object-cover' src={currentImg} alt='bigShoe1' />
         <div className='absolute bottom-[-60px] md:bottom-[-120px] xl:bottom-[-40px] flex flex-1 gap-4 m-1 '>
           {shoes.map((shoe, index) => (
             <ShoeCard
@@ -44,8 +44,9 @@ const Hero = () => {
               imageURL={shoe}
               bigShoe={shoe.bigShoe}
               image={shoe.thumbnail}
+              img={currentImg}
               handleChange={(event) => {
-                setImg(event);
+              setCurrentImg(event);
               }}
             />
           ))}
