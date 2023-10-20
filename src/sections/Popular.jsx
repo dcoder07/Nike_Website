@@ -6,7 +6,7 @@ const Popular = () => {
   return (
     <section>
       <div>
-        <h1 className='text-[45px] font-bold'>
+        <h1 className='text-[50px] font-bold'>
           Our <span className='text-[#FF6452]'>Popular</span> Products
         </h1>
         <p className='mt-8 text-[18px] leading-7 space-x-2 text-slate-500'>
