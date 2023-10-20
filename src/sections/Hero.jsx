@@ -35,9 +35,9 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className='relative flex flex-1 pt-5 pb-10 justify-center items-center ml-16 max-xl:rounded-2xl z-0 bg-shoe max-h-screen '>
+      <div className='relative flex-1 flex justify-center items-center max-xl:rounded-2xl xl:min-h-screen max-xl:py-40 bg-shoe '>
         <img className='object-cover' src={currentImg} alt='bigShoe1' />
-        <div className='absolute bottom-[-60px] md:bottom-[-120px] xl:bottom-[-40px] flex flex-1 gap-4 m-1 '>
+        <div className='flex sm:gap-6 gap-4 absolute bottom-[-5%] sm:left-[10%] max-sm:px-6'>
           {shoes.map((shoe, index) => (
             <ShoeCard
               key={index}
@@ -46,7 +46,7 @@ const Hero = () => {
               image={shoe.thumbnail}
               img={currentImg}
               handleChange={(event) => {
-              setCurrentImg(event);
+                setCurrentImg(event);
               }}
             />
           ))}
