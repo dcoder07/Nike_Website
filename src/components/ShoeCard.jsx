@@ -3,7 +3,7 @@ const ShoeCard = ({ image, bigShoe, handleChange, img }) => (
   <div className={`rounded-2xl p-4 border-2  w-auto bg-shoe shadow-xl cursor-pointer
   ${
         img === bigShoe
-          ? "border-red-900"
+          ? "border-[#FF6452]"
           : "border-gray-200"
       }
   `}>
