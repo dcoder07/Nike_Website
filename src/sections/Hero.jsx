@@ -35,7 +35,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div className='relative flex-1 flex justify-center items-center max-xl:rounded-2xl xl:min-h-screen max-xl:py-40 bg-shoe '>
+      <div className='relative flex-1 flex justify-center sm:items-center pt-10 pb-20 max-xl:rounded-2xl xl:min-h-screen sm:py-40 bg-shoe '>
         <img className='object-cover' src={currentImg} alt='bigShoe1' />
         <div className='flex sm:gap-6 gap-4 absolute bottom-[-5%] sm:left-[10%] max-sm:px-6'>
           {shoes.map((shoe, index) => (
