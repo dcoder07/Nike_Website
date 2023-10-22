@@ -4,7 +4,7 @@ import CustomerCard from "../components/CustomerCard";
 
 const Customer = () => {
   return (
-    <section className='flex flex-col sm:gap-16 w-full gap-10 bg-[#F5F6FF] py-24 px-10 sm:p-24 tracking-wide '>
+    <section className='flex flex-col sm:gap-16 w-full gap-10 max-container bg-[#F5F6FF] py-24 px-10 sm:p-24 tracking-wide '>
       <div className='flex flex-col items-center justify-center text-center'>
         <h1 className='font-bold text-5xl'>
           What Our <span className='text-[#FF6452]'>Customers</span> Say?

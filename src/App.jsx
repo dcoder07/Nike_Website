@@ -6,6 +6,7 @@ import Services from "./sections/Services";
 import Offers from "./sections/Offers";
 import Customer from "./sections/Customer";
 import Subscribe from "./sections/Subscribe";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
       </section>
       <section className='padding'>
         <Subscribe />
+      </section>
+      <section>
+        <Footer />
       </section>
     </main>
   );
