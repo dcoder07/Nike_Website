@@ -7,7 +7,7 @@ const ServiceCard = ({ imageIcon, content, label }) => {
         <img src={imageIcon} alt='sevice-icons' className='h-12 w-12 rounded-full bg-[#FF6452] p-2 ' />
       </div>
       <span className='font-bold text-3xl'>{label}</span>
-      <p className='text-lg leading-7 text-slate-500'>{content}</p>
+      <p className='text-lg leading-7 text-slate-500 '>{content}</p>
     </div>
   );
 };

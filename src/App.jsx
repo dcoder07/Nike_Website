@@ -3,6 +3,9 @@ import Hero from "./sections/Hero"
 import Popular from "./sections/Popular"
 import Premium from "./sections/Premium"
 import Services from "./sections/Services"
+import Offers from "./sections/Offers"
+import Subscribe from "./sections/Subscribe"
+
 const App = () =>{
   return(
 <main className="relative">
@@ -11,7 +14,8 @@ const App = () =>{
   <section className="padding"><Popular/></section>
   <section className="padding"><Premium/></section>
   <section className="padding padding-x py-10"><Services/></section>
-  <section className="padding">SpecialOffers</section>
+  <section className="padding"><Offers/> </section>
+  <section className="padding"><Subscribe/></section>
 </main>
   );
 }

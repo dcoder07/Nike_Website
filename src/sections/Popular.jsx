@@ -4,7 +4,7 @@ import PopularCard from "../components/PopularCard";
 
 const Popular = () => {
   return (
-    <section>
+    <section className="max-container">
       <div>
         <h1 className='text-[50px] font-bold'>
           Our <span className='text-[#FF6452]'>Popular</span> Products

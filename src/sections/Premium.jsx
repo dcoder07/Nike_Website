@@ -3,7 +3,7 @@ import shoe8 from "../assets/images/shoe8.svg";
 
 const Premium = () => {
   return (
-    <section className='flex max-xl:flex-col gap-4 w-full'>
+    <section className='flex max-xl:flex-col gap-4 w-full max-container  '>
       <div className='basis-1/2 md:p-12 p-5 '>
         <h1 className='space-x-4 leading-20 font-bold max-sm:text-5xl text-7xl'>
           We Provide You <span className='text-[#FF6452]'>Premium</span> Shoes

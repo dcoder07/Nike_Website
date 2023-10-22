@@ -4,7 +4,7 @@ import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
-    <section className='xl:flex grid lg:grid-cols-2 grid-cols-1 gap-10'>
+    <section className='xl:flex grid lg:grid-cols-2 grid-cols-1 gap-10 max-container'>
       {services.map((service, index) => {
         return (
           <ServiceCard
