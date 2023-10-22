@@ -2,8 +2,8 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <section className="flex max-lg:flex-col max-lg:gap-10 max-container">
-      <div className='text-5xl font-bold leading-tight basis-1/2'>
+    <section className="flex max-lg:flex-col max-lg:gap-10 max-container mb-16">
+      <div className='text-5xl  font-bold leading-tight basis-1/2'>
         <h1>
           Sign Up for <span className='text-[#FF6452]'>Updates</span>
           <br />& Newsletter
